@@ -1,0 +1,41 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: rgba(33, 33, 33, 1);
+  background-color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-links:hover,
+.header-links:focus,
+.footer-links:hover,
+.footer-links:focus {
+  color: rgba(33, 150, 243, 1);
+  cursor: pointer;
+}
+
+.header-nav {
+  font-size: 14px;
+}
+
+.hero-txt {
+  font-size: 44px;
+}
+
+.services,
+.team-persons {
+  font-size: 36px;
+}
+
+.logo-link {
+  font-size: 26px;
+  font-family: Raleway;
+}
+
+.logo-accent {
+  color: rgba(33, 150, 243, 1);
+}
