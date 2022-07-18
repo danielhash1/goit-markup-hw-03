@@ -7,23 +7,10 @@ font-family: 'Roboto', sans-serif; */
 /* Белый #FFFFFF; */
 /* Подвал rgba(255, 255, 255, 0.6); */
 
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 body {
   font-family: Roboto, sans-serif;
   color: rgba(33, 33, 33, 1);
   background-color: rgb(255, 255, 255);
-  letter-spacing: 0.03em;
-  align-content: center;
 }
 
 a {
@@ -31,29 +18,12 @@ a {
   color: inherit;
 }
 
-ul {
-  list-style: none;
-}
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .logo-link {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   /* identical to box height */
   letter-spacing: 0.03em;
   transition-duration: 0.3s;
@@ -73,13 +43,10 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   transition-duration: 0.3s;
   list-style-type: none;
-  display: flex;
-  align-items: center;
-  height: 80px;
 }
 
 .site-nav {
@@ -88,24 +55,17 @@ ul {
   font-weight: 500;
   line-height: 16px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   list-style-type: none;
-  display: flex;
-  align-items: center;
-  margin-left: 93px;
-}
-
-.site-nav .current {
-  color: #2196f3;
 }
 
 .item-but {
   transition-duration: 0.3s;
-  margin: 30px;
 }
 
-.item-but:hover {
+.item-but:hover,
+.item-but:focus {
   color: rgba(33, 150, 243, 1);
   cursor: pointer;
 }
@@ -115,20 +75,17 @@ ul {
   font-weight: 500;
   font-size: 14px;
   color: #757575;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   list-style-type: none;
   transition-duration: 0.3s;
-  margin-left: auto;
-  display: flex;
-  padding: 0;
 }
 
 .hero-txt {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   /* or 136% */
   text-align: center;
   letter-spacing: 0.06em;
@@ -142,35 +99,27 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   /* identical to box height, or 188% */
   display: flex;
-  margin: auto;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   background: #2196f3;
   transition-duration: 0.3s;
-  border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   color: #ffffff;
 }
 
 .button-buy:hover,
 .button-buy:focus {
-  color: #ffffff;
-  background-color: #188ce8;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2196f3;
   cursor: pointer;
 }
 
-.quality {
-  padding-top: 89px;
-  padding-bottom: 94px;
-}
-
 .qualities {
-  display: flex;
-  justify-content: space-between;
+  list-style-type: none;
 }
 
 .qualities-item {
@@ -178,7 +127,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -188,17 +137,18 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   /* or 171% */
   letter-spacing: 0.03em;
   color: #757575;
+  text-transform: none;
 }
 
 .services-txt {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -212,13 +162,26 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .person {
   list-style-type: none;
+  text-align: center;
+}
+
+.person-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .person-item {
@@ -226,10 +189,11 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   /* identical to box height */
   letter-spacing: 0.03em;
   color: #212121;
+  text-align: center;
 }
 
 .person-title {
@@ -237,10 +201,11 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   /* identical to box height */
   letter-spacing: 0.03em;
   color: #212121;
+  text-align: center;
 }
 
 .person-item-txt {
@@ -248,10 +213,11 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   /* identical to box height */
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: center;
 }
 
 .footer-style {
@@ -259,7 +225,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -277,8 +243,8 @@ ul {
   font-family: "Roboto";
   font-style: normal;
   font-size: 16px;
-  font-weight: 500px;
-  line-height: 26px;
+  font-weight: 500;
+  line-height: 1.62;
   /* identical to box height, or 162% */
   letter-spacing: 0.03em;
   color: #212121;
@@ -287,7 +253,8 @@ ul {
   transition-duration: 0.3s;
 }
 
-.button-filter-nav:hover {
+.button-filter-nav:hover,
+.button-filter-nav:focus {
   color: #ffffff;
   background: #2196f3;
   /* shadow-middle */
@@ -306,7 +273,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: #212121;
@@ -317,7 +284,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   /* identical to box height, or 188% */
   letter-spacing: 0.03em;
   color: #757575;
